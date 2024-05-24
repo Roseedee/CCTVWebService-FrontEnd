@@ -1,9 +1,14 @@
 const express = require('express')
+const path = require('path')
 const app = express()
 const port = 80
 
+app.set ( "view engine", "ejs" );
+
+app.use(express.static(path.join(__dirname, 'style')))
+
 app.get('/', (req, res) => {
-  res.send('Hello CCTV Web Service Project')
+  res.render(__dirname + "/routes/")
 })
 
 app.listen(port, () => {
