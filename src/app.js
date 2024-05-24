@@ -5,7 +5,7 @@ const port = 80
 
 app.set ( "view engine", "ejs" );
 
-app.use(express.static(path.join(__dirname, 'style')))
+app.use(express.static(path.join(__dirname, 'styles')));
 
 app.get('/', (req, res) => {
   res.render(__dirname + "/routes/")
