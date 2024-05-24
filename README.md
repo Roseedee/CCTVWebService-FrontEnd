@@ -1,10 +1,15 @@
 # CCTVWebService-FrontEnd
  
-### Build
+> ### Build
 #### Clone the repository.
-
 ```
 git clone https://github.com/Roseedee/CCTVWebService-FrontEnd.git && cd CCTVWebService-FrontEnd
 ```
-- __Install dependencies__
-- __Run build script__
+#### Install dependencies.
+```
+npm install
+```
+#### Run build script.
+```
+npm run dev
+```
