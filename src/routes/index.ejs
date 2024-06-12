@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CCTV Service • YALANETCOM</title>
     <link rel="stylesheet" type="text/css" href="/main.css">
+    <link rel="stylesheet" type="text/css" href="/banner.css">
 </head>
-<body>
+<body onload="slideBanner()">
     <%- include('../components/header.ejs') %>
-    <img src="/4.png" alt="" style="width: 100%;">
+    <div class="banner-container">
+        <div class="img-position">
+            <ul></ul>
+        </div>
+        <div class="banner-items" id="banner-items"></div>
+    </div>
+    <script src="/banner.js"></script>
 </body>
 </html>
