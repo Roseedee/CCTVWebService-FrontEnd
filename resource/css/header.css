@@ -75,11 +75,15 @@ header {
         input {
             transition: 0.5s;
             border-radius: 28px 0px 0px 28px;
-            padding-left: 10px;
-            width: 200px;
+            width: 0px;
             height: 100%;
             border: none;
             outline: none;   
+        }
+
+        input:focus {
+            padding-left: 10px;
+            width: 200px;
         }
 
         button {
@@ -102,6 +106,13 @@ header {
 
         button:hover {
             background-color: #EBEBEB;
+        }
+    }
+
+    form:hover {
+        input {
+            padding-left: 10px;
+            width: 200px;
         }
     }
 }

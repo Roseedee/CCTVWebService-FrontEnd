@@ -10,6 +10,7 @@
 }
 
 body {
+    /* height: 1000px; */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -30,6 +31,7 @@ a.btn {
     display: block;
     padding: 5px 12px;
     border-radius: 5px;
+    /* font-size: 1.8vh; */
     text-decoration: none;
 }
 
