@@ -7,8 +7,51 @@ footer {
 }
 
 .footer-container {
+    /* background-color: antiquewhite; */
     width: 80%;
     max-width: 1400px;
     height: 100px;
-    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.footer-col {
+    /* border: 1px solid black; */
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+}
+
+.footer-col:nth-child(1) {
+    justify-content: left;
+    align-items: center;
+    
+    .row {
+        height: 100%;
+        padding-right: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & a {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & img {
+                height: 40%;
+            }
+        }
+    }
+}
+
+.footer-col:nth-child(2) {
+    justify-content: right;
+    align-items: center;
+
+    .row {
+        padding-left: 30px;
+    }
 }

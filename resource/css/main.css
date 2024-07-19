@@ -18,7 +18,7 @@ body {
 
 a.text-link {
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.6);
+    color: #8C8C8C;
     transition: 0.2s linear;
 }
 
